@@ -17,17 +17,18 @@ reference_frame = cv2.imread(REFERENCE_IMAGE)
 
 while True:
     
-    camera = cv2.VideoCapture(CAMERA_INDEX)
-    if not camera.isOpened():
-        _except = CameraError("The camera was not found or could not be opened.")
-        logger.critical(msg=_except.message)
-        raise _except
+    # camera = cv2.VideoCapture(CAMERA_INDEX)
+    # if not camera.isOpened():
+    #     _except = CameraError("The camera was not found or could not be opened.")
+    #     logger.critical(msg=_except.message)
+    #     raise _except
     
-    ret, current_frame = camera.read()
-    if not ret:
-        _except = CameraError("Unable to count frame.")
-        logger.critical(msg=_except.message)
-        raise _except
+    # ret, current_frame = camera.read()
+    # if not ret:
+    #     _except = CameraError("Unable to count frame.")
+    #     logger.critical(msg=_except.message)
+    #     raise _except
+    current_frame = cv2.imread(REFERENCE_IMAGE)
     
     reference_hash = pHash(reference_frame)
     current_hash = pHash(current_frame)

@@ -1,0 +1,8 @@
+coloredlogs==15.0.1 
+environs==9.5.0 
+marshmallow==3.20.1 
+numpy==1.25.2
+opencv-python==4.8.0.76 
+packaging==23.1 
+pyreadline3==3.4.1 
+python-dotenv==1.0.0
