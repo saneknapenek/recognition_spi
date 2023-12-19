@@ -49,7 +49,7 @@ while True:
     else:
         logger.info("No differences found.")
 
-    camera.release()
+    # camera.release()
 
     if MODE == Mode.previous:
         reference_frame = current_frame
